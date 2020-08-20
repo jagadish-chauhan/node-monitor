@@ -1,0 +1,36 @@
+{
+  "name": "node-monitor",
+  "version": "1.0.0",
+  "description": "Realtime Monitoring for Express-based Node applications",
+  "main": "index.js",
+  "author": "Jagadish Chauhan <myjagdish@yahoo.com>",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "axios": "0.19.2",
+    "debug": "4.1.1",
+    "handlebars": "^4.7.6",
+    "on-headers": "1.0.2",
+    "pidusage": "2.0.18",
+    "socket.io": "2.3.0"
+  },
+  "optionalDependencies": {
+    "event-loop-stats": "1.2.0"
+  },
+  "scripts": {
+    "test-ci": "mocha --recursive",
+    "test": "mocha --recursive --watch",
+    "snyk-protect": "snyk protect",
+    "example": "npm i && npm i --prefix examples && npm start --prefix examples",
+    "eslint": "eslint ."
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "eslint": "6.8.0",
+    "mocha": "7.1.1",
+    "sinon": "9.0.1",
+    "snyk": "1.305.0"
+  },
+  "snyk": true
+}
