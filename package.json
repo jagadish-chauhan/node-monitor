@@ -22,8 +22,7 @@
     "test-ci": "mocha --recursive",
     "test": "mocha --recursive --watch",
     "snyk-protect": "snyk protect",
-    "example": "npm i && npm i --prefix examples && npm start --prefix examples",
-    "eslint": "eslint ."
+    "eslint": "eslint . --fix"
   },
   "devDependencies": {
     "chai": "4.2.0",
